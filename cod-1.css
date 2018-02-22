@@ -1,0 +1,35 @@
+
+
+/* التحرير السريع */
+.quickedit{display:none;visibility:hidden}
+
+
+/* --  قائمة بأهم الاقسام  -- */
+
+.LinkList li a{display:block;border-bottom:1px solid rgba(36,33,53,.12);padding:11px 0;color:#020202;text-align:center;font-size:18px;font-family:sky;font-weight:700}LinkList li a:before{content:"\f10c";padding-left:10px;font-family:fontawesome;font-size:8px}LinkList li a:hover{color:#9e2f5e;border-bottom:1px dotted #9e2f5e}LinkList li a:hover:before{content:"\f111";color:#9e2f5e}
+
+/* Popular---- نجوم المشاركات الشائعة ---Post S1 */
+.PopularPosts ul{background:#fff;padding:5px 5px 0;overflow:hidden;border-top:none;margin:0;list-style:none;color:#64707a}.PopularPosts li,.PopularPosts li a,.PopularPosts li a img,.PopularPosts li img{margin:0;padding:0;list-style:none;border:none;background:0 0;outline:0}.PopularPosts ul li img{background:#fafafa;display:block;margin:0 10px;width:60px;height:60px;overflow:hidden;float:right}.PopularPosts ul li{background-color:#fff;margin:0;padding:.7em 0!important;border:0;position:relative;border-bottom:1px dotted rgba(0,0,0,.2)}.PopularPosts ul li:hover:before{opacity:1}.PopularPosts ul li:first-child{border-top:none}.PopularPosts ul li:last-child{border-bottom:none}.PopularPosts ul li .item-title a,.PopularPosts ul li a{color:#333;font-size:15px;font-family:sky}.PopularPosts ul li a:hover{color:#000}.PopularPosts .item-thumbnail{margin:0}.PopularPosts .item-snippet{display:none}.PopularPosts .item-title{font-weight:700;padding:0 5px}
+
+/* .ازالة شريط التمرير اسفل المدونة*/
+html{overflow-x:hidden}
+
+ /* صناديق الملاحظات بالماتيريال ديزاين */
+.Nak1hacolorboxes{overflow:hidden;position:relative;margin:.6rem 0 1rem;transition:box-shadow .26s;border-radius:0;color:#fff;box-shadow:0 3px 6px 0 rgba(0,0,0,.16),0 3px 10px 0 rgba(0,0,0,.12);padding:10px;font-size:20px;font-family:sky}.Nak1hacolorboxes.blue{background:#34adff}.Nak1hacolorboxes.green{background:#35a781}.Nak1hacolorboxes.red{background:#f5554a}.Nak1hacolorboxes.orange{background:#ffa219}.Nak1hacolorboxes.purple{background:#7446c4}
+
+/* اعلان في النص */
+.related-simplify{position:relative;padding:0;margin:15px auto;width:100%}.related-simplify h4{background:#3498db;padding:8px 12px;margin:0;font-size:15px;font-weight:400;color:#fff;border:1px solid #2e88c5}.related-simplify ul{margin:0;padding:0}.related-simplify ul li{background:#f6f6f6;position:relative;list-style:none;padding:9px;margin:auto;line-height:1.4em;border:1px solid rgba(0,0,0,.1);border-bottom:0;transition:all .3s}.related-simplify ul li:nth-child(odd){background:#fefefe}.related-simplify ul li:last-child{border-bottom:1px solid rgba(0,0,0,.1)}.related-simplify ul li:before{content:'\f138';font-family:fontawesome;position:absolute;margin:0 9px 0 4px;color:#2ecc71;overflow:hidden;transition:all .3s}.related-simplify ul li:hover:before{content:'\f138';font-family:fontawesome;-webkit-animation:bounceright .3s alternate ease infinite;animation:bounceright .3s alternate ease infinite}.related-simplify a{color:#0383d9;font-size:13px;margin:0 0 0 30px}.related-simplify a:hover{color:#0383d9;text-decoration:underline}@-webkit-keyframes bounceright{from{-webkit-transform:translateX(0)}to{-webkit-transform:translateX(3px)}}@keyframes bounceright{from{transform:translateX(0)}to{transform:translateX(3px)}}
+
+/* نموذج الاتصال */
+#ContactForm1{display:none}
+
+/* ازالة تغيير شكل السكرول بار Scroll.Bar */
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-thumb{-webkit-shadow:inset 0 0 0 #2c8251;-webkit-border-radius:0;background-image:-webkit-linear-gradient(top,#2c8251 100%,#2c8251 100%)}::-webkit-scrollbar-track{-webkit-shadow:inset 0 0 0 #2c8251;-webkit-border-radius:100px}
+
+.post-meta {
+    color: #64676d;
+}
+
+b {
+    line-height: 1.7;
+}
