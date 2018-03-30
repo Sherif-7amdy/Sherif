@@ -23,3 +23,6 @@
        url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.woff) format('woff'),
        url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.ttf) format('truetype');
 }
+@font-face{font-family:'cairo';src: url('//www.fontstatic.com/fonts/cairo/cairo.eot?#iefix');src: local('القاهرة'), local('cairo'),url('//www.fontstatic.com/fonts/cairo/cairo.woff') format('woff');}
+@font-face{font-family:'cairo-bold';src: url('//www.fontstatic.com/fonts/cairo-bold/cairo-bold.eot?#iefix');src: local('القاهرة ثقيل'), local('cairo-bold'),url('//www.fontstatic.com/fonts/cairo-bold/cairo-bold.woff') format('woff');}
+@font-face{font-family:'cairo-light';src: url('//www.fontstatic.com/fonts/cairo-light/cairo-light.eot?#iefix');src: local('القاهرة خفيف'), local('cairo-light'),url('//www.fontstatic.com/fonts/cairo-light/cairo-light.woff') format('woff');}
