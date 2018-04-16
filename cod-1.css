@@ -35,39 +35,3 @@ b {
 }
 #Assess{display:none}
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebPage",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "98",
-    "bestRating": "100",
-    "worstRating": "0",
-    "ratingCount": "46"
-  },
-  "review": {
-    "@type": "Review",
-    "url": "<data:blog.url/>",
-    "author": {
-      "@type": "Person",
-      "name": "Nama Anda",
-      "sameAs": "https://plus.google.com/XXXXX"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "<data:blog.title/>",
-      "sameAs": "<data:blog.homepageUrl/>"
-    },
-    "description": "<data:blog.pageName/>",
-    "inLanguage": "id",
-    "reviewRating": {
-      "@type": "Rating",
-      "worstRating": 0,
-      "bestRating": 5,
-      "ratingValue": 4.5
-    }
-  }
-}
-</script>
-
