@@ -1,26 +1,17 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-  <script src="hls.min.js"></script>
-  <style>
-    body{
-      background-color:black;
+function playM3u8(url){
+  if(Hls.isSupported()) {
+      var video = document.getElementById('video');
+      video.volume = 1.0;
+      var hls = new Hls();
+      var m3u8Url = decodeURIComponent(url)
+      hls.loadSource(m3u8Url);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+      });
+      document.title = url
     }
-    #video{
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      margin: auto;
-      max-height: 100%;
-      max-width: 100%;
-    }
-  </style>
-</head>
-<body>
-  <video id="video" style="width: 100%; height: 100%;" controls></video>
-  <script src="player.js"></script>
-</body>
-</html>
+}
+
+playM3u8(window.location.href.split("#")[1])
