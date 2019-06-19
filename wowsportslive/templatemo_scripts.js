@@ -1,4 +1,3 @@
-<meta HTTP-EQUIV='REFRESH' content='0; url=https://app.skylivehd.com/'/>
 
 
 jQuery(document).ready(function(){$.templatemo_is_chrome=/chrom(e|ium)/.test(navigator.userAgent.toLowerCase());$.templatemo_is_ie=!!navigator.userAgent.match(/Trident/g)||!!navigator.userAgent.match(/MSIE/g);jQuery.fn.templateMoMenuHide=function(){return this.each(function(){$(this).removeClass("shadow-top-down").animate({opacity:0,top:120},240,"easeOutSine",function(){$(this).hide();});return true;});}
