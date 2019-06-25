@@ -43,7 +43,7 @@
 
 
 html {
-font-family: 'Cairo', sans-serif; "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: Droid Arabic Naskh "Helvetica Neue", Helvetica, Arial, sans-serif;
 -ms-text-size-adjust: 100%;
 -webkit-text-size-adjust: 100%;
 }
@@ -145,7 +145,7 @@ code,
 kbd,
 pre,
 samp {
-font-family: 'Cairo', sans-serif; monospace, monospace;
+font-family: Droid Arabic Naskh monospace, monospace;
 font-size: 1em;
 }
 button,
@@ -314,7 +314,7 @@ font-size: 10px;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-font-family: 'Cairo', sans-serif; "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: Droid Arabic Naskh "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
 line-height: 1.42857143;
 color: #333333;
@@ -324,7 +324,7 @@ input,
 button,
 select,
 textarea {
-font-family: 'Cairo', sans-serif; inherit;
+font-family: Droid Arabic Naskh inherit;
 font-size: inherit;
 line-height: inherit;
 }
@@ -442,7 +442,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-font-family: 'Cairo', sans-serif; inherit;
+font-family: Droid Arabic Naskh inherit;
 font-weight: 500;
 line-height: 1.1;
 color: inherit;
@@ -4947,7 +4947,7 @@ margin-right: -10px;
 .carousel-control .icon-next {
 width: 20px;
 height: 20px;
-font-family: 'Cairo', sans-serif; serif;
+font-family: Droid Arabic Naskh serif;
 line-height: 1;
 }
 .carousel-control .icon-prev:before {
@@ -5322,7 +5322,7 @@ GENERAL STYLES
 ============================================================ */
 *{margin:0;padding:0}
 html,body{width:100%}
-body{font-family: 'Cairo', sans-serif;'Cairo',sans-serif;line-height:30px;width:100%}
+body{font-family: Droid Arabic Naskh'Cairo',sans-serif;line-height:30px;width:100%}
 .set-radius-zero{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0}
 .content-wrapper{margin-top:40px;min-height:600px;padding-bottom:60px}
 .page-head-line{font-weight:900;padding-bottom:20px;border-bottom:2px solid #3d3d3d;text-transform:uppercase;color:#3d3d3d;font-size:20px;margin-bottom:40px}
@@ -5481,7 +5481,7 @@ text-align: center;
 background: #5681b9;
 padding: 8px 5%;
 color: #fff;
-font-family: 'Cairo', sans-serif; 'Cairo', sans-serif;
+font-family: Droid Arabic Naskh 'Cairo', sans-serif;
 text-decoration: none;
 margin: 5px;
 }
@@ -5489,12 +5489,12 @@ margin: 5px;
 background: #a9231c;
 padding: 8px 5%;
 color: #fff;
-font-family: 'Cairo', sans-serif; 'Cairo', sans-serif;
+font-family: Droid Arabic Naskh 'Cairo', sans-serif;
 text-decoration: none;
 margin: 5px;
 }
 .livewhere h1 {
-font-family: 'Cairo', sans-serif; 'El Messiri', sans-serif;
+font-family: Droid Arabic Naskh 'El Messiri', sans-serif;
 padding-bottom: 18px;
 }
 @media (max-width:769px){
