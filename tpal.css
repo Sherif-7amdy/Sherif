@@ -1,8 +1,6 @@
 <style id='page-skin-1' type='text/css'><!--
 
-.panel-body {
-    padding: 0px;
-}
+
 
 @font-face{font-family:'sky';src: url('//www.fontstatic.com/fonts/sky/sky.eot?#iefix');src: local('السماء'), local('sky'),url('//www.fontstatic.com/fonts/sky/sky.woff') format('woff');}
 @font-face{font-family:'sky-bold';src: url('//www.fontstatic.com/fonts/sky-bold/sky-bold.eot?#iefix');src: local('السماء ثقيل'), local('sky-bold'),url('//www.fontstatic.com/fonts/sky-bold/sky-bold.woff') format('woff');}
@@ -4442,9 +4440,7 @@ border-radius: 4px;
 -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.panel-body {
-padding: 0px;
-}
+
 .panel-body .img-responsive {
 width: 100%;
 }
