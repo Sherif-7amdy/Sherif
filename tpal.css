@@ -1,37 +1,4 @@
 <style id='page-skin-1' type='text/css'><!--
-
-
-
-@font-face{font-family:'sky';src: url('//www.fontstatic.com/fonts/sky/sky.eot?#iefix');src: local('السماء'), local('sky'),url('//www.fontstatic.com/fonts/sky/sky.woff') format('woff');}
-@font-face{font-family:'sky-bold';src: url('//www.fontstatic.com/fonts/sky-bold/sky-bold.eot?#iefix');src: local('السماء ثقيل'), local('sky-bold'),url('//www.fontstatic.com/fonts/sky-bold/sky-bold.woff') format('woff');}
-/*
- * Droid Arabic Naskh (Arabic) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: 'Droid Arabic Naskh';
-  font-style: normal;
-  font-weight: 400;
-  src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.eot);
-  src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.eot?#iefix) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Droid Arabic Naskh';
-  font-style: normal;
-  font-weight: 700;
-  src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.eot);
-  src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.eot?#iefix) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.ttf) format('truetype');
-}
-@font-face{font-family:'cairo';src: url('//www.fontstatic.com/fonts/cairo/cairo.eot?#iefix');src: local('القاهرة'), local('cairo'),url('//www.fontstatic.com/fonts/cairo/cairo.woff') format('woff');}
-@font-face{font-family:'cairo-bold';src: url('//www.fontstatic.com/fonts/cairo-bold/cairo-bold.eot?#iefix');src: local('القاهرة ثقيل'), local('cairo-bold'),url('//www.fontstatic.com/fonts/cairo-bold/cairo-bold.woff') format('woff');}
-@font-face{font-family:'cairo-light';src: url('//www.fontstatic.com/fonts/cairo-light/ca
-
-
 /*==================================================*
 * Name:	        KORA BLOGGER EMPLATE
 * Version:		1.0.0
@@ -43,7 +10,7 @@
 
 
 html {
-font-family: Droid Arabic Naskh, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: sans-serif;
 -ms-text-size-adjust: 100%;
 -webkit-text-size-adjust: 100%;
 }
@@ -94,7 +61,7 @@ text-decoration: underline dotted;
 }
 b,
 strong {
-font-weight: 400;
+font-weight: bold;
 }
 dfn {
 font-style: italic;
@@ -145,22 +112,10 @@ code,
 kbd,
 pre,
 samp {
-font-family: Droid Arabic Naskh, monospace, monospace;
+font-family: monospace, monospace;
 font-size: 1em;
 }
 button,
-
-
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333333;
-    background-color: #fff;
-}
-
-
-
 input,
 optgroup,
 select,
@@ -229,7 +184,7 @@ textarea {
 overflow: auto;
 }
 optgroup {
-font-weight: 400;
+font-weight: bold;
 }
 table {
 border-collapse: collapse;
@@ -325,13 +280,18 @@ html {
 font-size: 10px;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
-
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.42857143;
+color: #333333;
+background-color: #f8f8f8;
+}
 input,
 button,
 select,
 textarea {
-font-family: Droid Arabic Naskh, inherit;
+font-family: inherit;
 font-size: inherit;
 line-height: inherit;
 }
@@ -449,8 +409,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-font-family: Droid Arabic Naskh, inherit;
-font-weight: 400;
+font-family: inherit;
+font-weight: 500;
 line-height: 1.1;
 color: inherit;
 }
@@ -4108,7 +4068,7 @@ display: inline-block;
 min-width: 10px;
 padding: 3px 7px;
 font-size: 12px;
-font-weight: 400;
+font-weight: bold;
 line-height: 1;
 color: #ffffff;
 text-align: center;
@@ -4233,7 +4193,7 @@ margin-top: 0;
 color: inherit;
 }
 .alert .alert-link {
-font-weight: 400;
+font-weight: bold;
 }
 .alert > p,
 .alert > ul {
@@ -4448,7 +4408,7 @@ border-radius: 4px;
 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .panel-body {
-    padding: 15px;
+padding: 15px;
 }
 .panel-body .img-responsive {
 width: 100%;
@@ -4477,7 +4437,7 @@ color: inherit;
 }
 .panel-footer {
 padding: 10px 15px;
-background-color: #f8f8f8;
+background-color: #f5f5f5;
 border-top: 1px solid #dddddd;
 border-bottom-left-radius: 3px;
 border-bottom-right-radius: 3px;
@@ -4682,7 +4642,7 @@ border-color: #dddddd;
 }
 .panel-default .panel-heading {
 color: #333333;
-background-color: #f8f8f8;
+background-color: #f5f5f5;
 border-color: #dddddd;
 }
 .panel-default .panel-heading + .panel-collapse .panel-body {
@@ -4954,7 +4914,7 @@ margin-right: -10px;
 .carousel-control .icon-next {
 width: 20px;
 height: 20px;
-font-family: Droid Arabic Naskh, serif;
+font-family: serif;
 line-height: 1;
 }
 .carousel-control .icon-prev:before {
@@ -5329,7 +5289,7 @@ GENERAL STYLES
 ============================================================ */
 *{margin:0;padding:0}
 html,body{width:100%}
-body{font-family: Droid Arabic Naskh,'Cairo',sans-serif;line-height:30px;width:100%}
+body{font-family:'Cairo',sans-serif;line-height:30px;width:100%}
 .set-radius-zero{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0}
 .content-wrapper{margin-top:40px;min-height:600px;padding-bottom:60px}
 .page-head-line{font-weight:900;padding-bottom:20px;border-bottom:2px solid #3d3d3d;text-transform:uppercase;color:#3d3d3d;font-size:20px;margin-bottom:40px}
@@ -5488,7 +5448,7 @@ text-align: center;
 background: #5681b9;
 padding: 8px 5%;
 color: #fff;
-font-family: 'sky';
+font-family: 'Cairo', sans-serif;
 text-decoration: none;
 margin: 5px;
 }
@@ -5496,12 +5456,12 @@ margin: 5px;
 background: #a9231c;
 padding: 8px 5%;
 color: #fff;
-font-family: 'sky';
+font-family: 'Cairo', sans-serif;
 text-decoration: none;
 margin: 5px;
 }
 .livewhere h1 {
-font-family: Droid Arabic Naskh, 'El Messiri', sans-serif;
+font-family: 'El Messiri', sans-serif;
 padding-bottom: 18px;
 }
 @media (max-width:769px){
@@ -5514,3 +5474,4 @@ min-height: auto;
 }
 
 --></style>
+
