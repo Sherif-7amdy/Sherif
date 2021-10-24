@@ -23,6 +23,8 @@ let All=`<div class="containerMatch"><a href="${document.querySelector('input.Li
     <div class="Nateja">
     <div id='matchHour'>${document.querySelector('input.Hour').value}</div>
     <div class="natej">${document.querySelector('input.Natejaa').value}</div>
+        <div class="natej">${document.querySelector('input.Natejaa2').value}</div>
+
     <div class="matchDate" data-start='${document.querySelector('input.datetimeS').value}:00+02:00' data-end='${document.querySelector('input.datetimeE').value}:00+02:00'></div>
     
     
