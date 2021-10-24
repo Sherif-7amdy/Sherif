@@ -13,7 +13,7 @@
     background-color: #036522;
     border-radius: 6px;
     color: white;
-
+}
 .natej2 {
     background-color: #e31818;
     border-radius: 6px;
@@ -399,6 +399,20 @@ header .Logo div#Header1 {width: 160px;}
     height: 20%;
 }
 
-}
 
+  .natej {
+    background-color: #036522;
+    border-radius: 6px;
+    color: white;
+}
+.natej2 {
+    background-color: #e31818;
+    border-radius: 6px;
+    color: white;
+}
+    .natej3 {
+    background-color: #221e1e;
+    border-radius: 6px;
+    color: white;
+}
 
