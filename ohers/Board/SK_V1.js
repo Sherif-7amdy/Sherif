@@ -1,4 +1,4 @@
-      if(window.location.hostname !== 'g.anubis-web.com'){window.location.href ='https://www.anubis-web.com';}
+      if(window.location.hostname !== 'g.#'){window.location.href ='#';}
 
 document.querySelector('.GetCode').addEventListener('click',()=>{
 
