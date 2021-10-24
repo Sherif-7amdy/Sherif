@@ -15,7 +15,7 @@ let All=`<div class="containerMatch"><a href="${document.querySelector('input.Li
     
     <div class="fareq">
     <div class="Imagee">
-    <img alt="${document.querySelector('input.asm1').value}" class="col-img lazy" height="70" src="${document.querySelector('input.fareq1').value}" data-src="${document.querySelector('input.fareq1').value}" title="${document.querySelector('input.asm1').value}" width="70" />
+    <img alt="${document.querySelector('input.asm1').value}" class="col-img lazy" height="70" src="${document.querySelector('input.fareq2').value}" data-src="${document.querySelector('input.fareq1').value}" title="${document.querySelector('input.asm1').value}" width="70" />
     </div>
     <div class="asm">${document.querySelector('input.asm1').value}</div>
     
@@ -32,7 +32,7 @@ let All=`<div class="containerMatch"><a href="${document.querySelector('input.Li
     <div class="fareq">
         <div class="Imagee">
         <img alt="${document.querySelector('input.asm2').value}" class="col-img lazy" height="70" 
-   src="${document.querySelector('input.fareq1').value}
+   src="${document.querySelector('input.fareq2').value}
     " data-src="${document.querySelector('input.fareq2').value}" 
 title="${document.querySelector('input.asm2').value}" width="70" />
         </div>
