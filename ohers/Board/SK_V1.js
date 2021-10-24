@@ -1,4 +1,3 @@
-      if(window.location.hostname !== 'g.#'){window.location.href ='#';}
 
 document.querySelector('.GetCode').addEventListener('click',()=>{
 
