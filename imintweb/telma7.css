@@ -18,6 +18,8 @@
     pointer-events: none;
     font-size: 14px;
     text-decoration: none
+            font-family: 'Tajawal';
+
 }
 
 .mint-tips::after,
@@ -36,6 +38,8 @@
     user-select: none;
     -webkit-transform-origin: top;
     transform-origin: top
+            font-family: 'Tajawal';
+
 }
 
 .mint-tips::after,
