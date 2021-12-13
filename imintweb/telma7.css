@@ -3,7 +3,6 @@
     position: relative;
     display: inline-block;
     -webkit-font-smoothing: antialiased;
-    height: 100%
 }
 
 .mint-tips::before,
