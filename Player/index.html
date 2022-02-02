@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Plyr + HLS.js &amp; video quality</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'>
+<style>
+        margin: 0;
+      font-family: Roboto;
+      background-color: #262626;
+    }
+
+    .q-audio {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    .q-hls .plyr {
+      height: 100vh;
+    }
+
+    .plyr__menu__container {
+      max-height: calc(100vh - 100% - 20px);
+      overflow-y: auto;
+    }
+
+    .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .loader {
+      border: 4px solid #000;
+      border-top: 4px solid #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin .75s linear infinite;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .plyr--video:before{font-family: Changa,"Segoe UI";font-size:2.5vw;color:#fff;position:absolute;right:0;bottom:0;left:0;z-index:1;display:flex;flex-direction:column;justify-content:center;align-items:center;pointer-events:none;background:linear-gradient(transparent,);height:150px}
+.plyr,.plyr__video-wrapper{width:100% !important;height:100% !important}
+.plyr audio,.plyr video{height:100%!important}
+  
+  
+  /*.container {
+	margin: 100px auto;
+	width: 70%;
+}*/
+video {
+	width: 100%;
+}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<video controls crossorigin playsinline poster="https://bitdash-a.akamaihd.net/content/sintel/poster.png"></video>
+</div>
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+<!-- Hls.js 0.9.x and 0.10.x both have critical bugs affecting this demo. Using fixed git hash to when it was working (0.10.0 pre-release), until https://github.com/video-dev/hls.js/issues/1790 has been resolved -->
+<script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
+<!-- partial -->
+  <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script>
+<script src='https://unpkg.com/plyr@3'></script>
+ 
+<script>
+      function getQueryParam(param) {
+var result =  window.location.search.match(new RegExp("(\\?|&)" + param + "(\\[\\])?=([^&]*)")); return result ? result[3] : false;
+    }
+var quality = getQueryParam("s");
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const source = quality;
+  const video = document.querySelector('video');
+
+  const defaultOptions = {};
+
+  if (!Hls.isSupported()) {
+    video.src = source;
+    var player = new Plyr(video, defaultOptions);
+  } else {
+    // For more Hls.js options, see https://github.com/dailymotion/hls.js
+    const hls = new Hls();
+    hls.loadSource(source);
+
+    // From the m3u8 playlist, hls parses the manifest and returns
+    // all available video qualities. This is important, in this approach,
+    // we will have one source on the Plyr player.
+    hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+
+      // Transform available levels into an array of integers (height values).
+      const availableQualities = hls.levels.map(l => l.height);
+      availableQualities.unshift(0); //prepend 0 to quality array
+
+      // Add new qualities to option
+      defaultOptions.quality = {
+        default: 0, //Default - AUTO
+        options: availableQualities,
+        forced: true,
+        onChange: e => updateQuality(e) };
+
+      // Add Auto Label 
+      defaultOptions.i18n = {
+        qualityLabel: {
+          0: 'Auto' } };
+
+
+
+      hls.on(Hls.Events.LEVEL_SWITCHED, function (event, data) {
+        var span = document.querySelector(".plyr__menu__container [data-plyr='quality'][value='0'] span");
+        if (hls.autoLevelEnabled) {
+          span.innerHTML = `AUTO (${hls.levels[data.level].height}p)`;
+        } else {
+          span.innerHTML = `AUTO`;
+        }
+      });
+
+      // Initialize new Plyr player with quality options
+      var player = new Plyr(video, defaultOptions);
+    });
+
+    hls.attachMedia(video);
+    window.hls = hls;
+  }
+
+  function updateQuality(newQuality) {
+    if (newQuality === 0) {
+      window.hls.currentLevel = -1; //Enable AUTO quality if option.value = 0
+    } else {
+      window.hls.levels.forEach((level, levelIndex) => {
+        if (level.height === newQuality) {
+          console.log("Found quality match with " + newQuality);
+          window.hls.currentLevel = levelIndex;
+        }
+      });
+    }
+  }
+});
+</script>
+
+</body>
+</html>
