@@ -1,4 +1,6 @@
-# skylive player
+# Skylive Player
+
+# plyr 
 
 #plyr 1
 https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/plyrv1.html?src=Player/sky.m3u8
@@ -14,7 +16,8 @@ https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/plyrv3.html
 #netflix
 https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/JwPlayerPro.html
 
-# clappr
+# Clappr
+
 #clappr 1v
 https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/clappr-index.html?s=Player/sky.m3u8
 
