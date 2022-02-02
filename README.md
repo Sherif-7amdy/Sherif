@@ -14,7 +14,7 @@ https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/plyrv3.html?src=Player
 # JwPlayer Pro 
 
 #netflix
-https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/JwPlayerPro.html
+https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/JwPlayerPro.html?s=Player/sky.m3u8
 
 # Clappr
 
