@@ -9,7 +9,7 @@ https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/plyrv1.html?src=Player
 https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/plyrv2.html?s=Player/sky.m3u8
 
 #plyr3
-https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/plyrv3.html
+https://raw.githack.com/Sherif-7amdy/Sherif/master/Player/plyrv3.html?src=Player/sky.m3u8
 
 # JwPlayer Pro 
 
