@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>skylivehd Player</title>
+  <link rel="stylesheet" href="https://tv.taghtia.com/player/plyr.min.css">
+  <script
+    src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL,Array.prototype.map,Promise,fetch">
+  </script>
+  <script src="https://tv.taghtia.com/player/plyr.min.js"></script>
+  <script src="https://tv.taghtia.com/player/hls.min.js"></script>
+      <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport'/>
+
+<meta content='noindex, nofollow' name='robots'/>
+<script src='https://cdn.statically.io/gh/kol7sry/kol7sry/d57d2e85/jquery.mb.js'></script>
+<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport'/>
+
+  <style>
+
+    
+    body {
+      margin: 0;
+      font-family: Roboto;
+      background-color: black;
+    }
+
+    .q-audio {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    .q-hls .plyr {
+      height: 100vh;
+    }
+
+    .plyr__menu__container {
+      max-height: calc(100vh - 100% - 20px);
+      overflow-y: auto;
+    }
+
+    .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .loader {
+      border: 4px solid #000;
+      border-top: 4px solid #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin .75s linear infinite;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+html, input, button{font-family:Google Sans, sans-serif;}
+.container{max-width:800px;margin:0 auto;}
+.js-plyr,.post,.post-content{max-width:100%}
+.js-plyr,.plyr__control--overlaid svg,article pre{display:block}
+.plyr__control--overlaid{    padding: 1.5rem 43px;
+    background-color: rgb(42 42 42);
+    border-radius: 24px;
+}
+.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {background-color:rgb(42 42 42);}
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {background: #2F2F2F;}
+.plyr--video .plyr__control.plyr__tab-focus {box-shadow: 0 0 0 2px rgba(156,136,255,.5);outline: 0;}
+.plyr__control.plyr__tab-focus {box-shadow: 0 0 0 2px rgba(156,136,255,.5);outline: 0;}
+.plyr--video .plyr__controls{background:linear-gradient(transparent,rgba(0,0,0,.5))}
+.plyr--audio .plyr__control.plyr__tab-focus,.plyr--audio .plyr__control:hover,.plyr--audio .plyr__control[aria-expanded=true],.plyr--video .plyr__controls .plyr__control.plyr__tab-focus,.plyr--video .plyr__controls .plyr__control:hover,.plyr--video .plyr__controls .plyr__control[aria-expanded=true],.plyr__menu__container label.plyr__control input[type=radio]:checked+span{background-color:rgb(42 42 42)}
+.plyr--full-ui input[type=range]{color:#2F2F2F}
+.plyr__poster{background-size:cover}
+.plyr__control--overlaid:focus, .plyr__control--overlaid:hover {background: #2F2F2F;}
+.plyr-ratio .plyr__video-wrapper{padding-bottom:56.25%;height:0}
+.plyr-ratio .plyr__video-wrapper video{width:100%;height:100%;position:absolute;top:0;bottom:0;left:0;margin:auto}
+.plyr__menu__container .plyr__control{font-size:14px;font-family:Google Sans,sans-serif;font-weight:500;line-height:1.5}
+.plyr__menu__container ul,.plyr__menu__container ul li{margin:0;list-style:none}
+.plyr--audio .plyr__controls{border:1px solid #2F2F2F}
+
+</style>
+<link href='https://cdn.jsdelivr.net/gh/Sherif-7amdy/Sherif/font-sky-DroidArabicNaskh-cairo.css' rel='stylesheet' type='text/css'/>
+
+<script>
+function c2cb(){document.getElementById("code1").select(),document.execCommand("copy")}
+</script>
+<style>
+
+/* arabic */
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&subset=arabic');
+@font-face{font-family:bahij;font-display:swap;src:url("https://dl.dropbox.com/s/iq9wjx31hqmfjhh/bahij.ttf?dl=0")}
+body{font-family:Cairo,sans-serif;line-height:30px;width:100%;margin:0;background-color:#d8dbe1;color:#000;font-size:14px}
+a{color:#333;text-decoration:none}
+a:focus,a:hover{color:#d2203e;transition: .5s ease;}
+.container{max-width:1100px;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.item .main .container{max-width:900px}
+
+    .plyr--video:before {
+      
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    z-index: 5555;
+    /* left: 10px; */
+    cursor: pointer;
+    bottom: 50px;
+    font-weight: 600;
+    font-family:bahij,sans-serif
+    font-size: 15px;
+    content: ' تطبيق سكاي لايف | app.skylivehd.com ';
+    }
+
+    .plyr--loading:after {
+    content: 'الرجاء الانتظار اذا توقف الفيديو قم بالضغط علي كلمة تحديث';
+    color: #fff;
+    text-align: center;
+   /* display: inline-block;
+    text-decoration: none;
+        z-index: 5555; */
+    position: absolute;
+    cursor: pointer;
+    bottom: 300px;
+    font-weight: 600;
+        color: #fff6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0nNzhweCcgaGVpZ2h0PSc3OHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgY2xhc3M9InVpbC1yaW5nLWFsdCI+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0ibm9uZSIgY2xhc3M9ImJrIj48L3JlY3Q+CiAgICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgc3Ryb2tlPSJyZ2JhKDAsMCwwLDApIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjwvY2lyY2xlPgogICAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDAiIHN0cm9rZT0iI2ZmZmZmZiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9InN0cm9rZS1kYXNob2Zmc2V0IiBkdXI9IjJzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgZnJvbT0iMCIgdG89IjUwMiI+PC9hbmltYXRlPgogICAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9InN0cm9rZS1kYXNoYXJyYXkiIGR1cj0iMnMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiB2YWx1ZXM9IjE1MC42IDEwMC40OzEgMjUwOzE1MC42IDEwMC40Ij48L2FuaW1hdGU+CiAgICA8L2NpcmNsZT4KPC9zdmc+) no-repeat center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+    }
+.transform-active{animation:flash 1s infinite;display:inline-block!important;opactity:0}
+@keyframes flash {
+0%{opacity:.6;-moz-box-shadow:0 0 0 0 rgba(255,255,255,0.5);box-shadow:0 0 0 0 rgba(255,255,255,0.6)}
+70%{-moz-box-shadow:0 0 0 20px rgba(255,255,255,0);box-shadow:0 0 0 20px rgba(255,255,255,0)}
+100%{opacity:0;display:none;-moz-box-shadow:0 0 0 0 rgba(255,255,255,0);box-shadow:0 0 0 0 rgba(255,255,255,0)}
+}
+body.static_page{position: initial;overflow:hidden;margin:0;font-size:14px;font-family:Changa,"Segoe UI"}
+.post-ch {height: 100%}
+#share_channel{height:50px;width:100%;z-index:3;border-radius:8px;background:#163d74;float:right;overflow:hidden;padding:5px;box-sizing:border-box}
+span#share_text{width:115px;float:right;line-height:40px;color:#fff;font-size:17px;font-weight:700;text-align:center;box-sizing:border-box}
+#share_channel textarea{overflow-y:hidden;resize:none;width:calc(100% - 120px);height:100%;max-height:40px;direction:ltr;float:left;font-size:14px;line-height:37px;padding:0 5px;color:#5B5B5B;box-sizing:border-box;border-radius:8px}
+#showshare{position:absolute;z-index:5555;left:10px;top:20px;margin:auto;cursor:pointer}
+.share-title{font-family:"Segoe UI",tahoma;color:#eee;text-align:center;display:inline-block;font-size:100%;background-color:#353535;border-radius:4px;padding:3px 7px}
+#showshare1 .share-title { position: absolute; left: 10px; cursor: pointer; top: 20px; }
+#showshare1{border-radius:8px;position:fixed;width:100%;height:100%;z-index:9999;text-align:center;background:rgba(0,0,0,0.8);color:#eee}
+#showshare10{position:absolute;top:50%;margin-top:-90px;right:0;left:0}
+textarea{display:block;position:relative;border:1px solid #f1f1f1;margin:5px auto;border-radius:5px;width:90%;height:65px;color:#555;max-width:400px;overflow-y:hidden}
+.custom-btn{cursor:pointer;display:inline-block;padding:6px 14px;border-radius:5px;background:#dc4537;font-size:14px;outline:0 none;color:#fff;border:0;font-family:"Segoe UI",tahoma}
+.custom-btn:hover{background:#b13a26}
+.blog-ch{position:absolute;z-index:2;top:0;right:0;left:0;bottom:0;border-radius:10px;overflow:hidden}
+.blog-ch{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='40px' id='loader-1' version='1.1' viewBox='0 0 50 50' width='40px'%3E%3Cpath d='M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z' fill='%231d3f75' transform='rotate%28320.6 25 25%29'%3E%3CanimateTransform attributeName='transform' attributeType='xml' dur='0.6s' from='0 25 25' repeatCount='indefinite' to='360 25 25' type='rotate'%3E%3C/animateTransform%3E%3C/path%3E%3C/svg%3E");background-repeat:no-repeat;background-position-x:50%;background-position-y:50%;background-color:#000}
+
+  
+  
+  
+  
+  .rlink{
+    font-family: "dubai";
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: 100%;
+    background-color: #79001a;
+    border-radius: 5px;
+    padding: 3px 9px;
+    text-decoration: none;
+    position: absolute;
+    z-index: 5555;
+    right: 5px;
+    cursor: pointer;
+    top: 10px;
+
+
+}
+
+.rlink:after,
+.rlink:before {
+    content: "";
+    position: absolute;
+    left: 48%;
+    top: 46%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 55px;
+    height: 30px;
+    display: block
+}
+
+.rlink:before {
+    z-index: 0;
+    background: #ff000036;
+  /*  animation: pulse-border 1.5s ease-out infinite; */
+    border-radius: 5px
+}
+
+.rlink:after {
+    z-index: 1;
+    border-radius: 5px;
+    transition: all .2s
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0
+    }
+}
+  
+  h1.post-title {
+    display: none;
+}
+  
+ 
+ 
+.fxr {
+    position: fixed;
+    right: 4px;
+    top: 3px;
+    z-index: 99;
+    background: #F44336;
+    border: navajowhite;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 11px;
+    padding: 4px;
+}
+
+
+
+a.DSD {
+    right: 9px;
+    z-index: 1000;
+    width: 100px;
+    position: absolute;
+    top: -2px;
+    margin: 15px;
+
+
+}
+
+    
+    
+    
+    
+  </style>
+</head>
+
+<body class="q-hls">
+  <div class="container loading"><span class="loader"></span></div>
+  <div class="container error hidden">حدث خطأ ما لدى تشغيل الفيديو، المرجو المحاولة لاحقا</div>
+  <video crossorigin playsinline controls autoplay></video>
+    <script>
+        function getQueryParam(param) {
+var result =  window.location.search.match(new RegExp("(\\?|&)" + param + "(\\[\\])?=([^&]*)")); return result ? result[3] : false;
+    }
+var quality = getQueryParam("s");
+      
+</script>
+  <script>
+    function debounce(func, delay) {
+      let inDebounce
+      return function() {
+        const context = this
+        const args = arguments
+        clearTimeout(inDebounce)
+        inDebounce = setTimeout(() => func.apply(context, args), delay)
+      }
+    }
+    function load(source) {
+      const video = document.querySelector('video');
+      const defaultOptions = {};
+
+      function updateQuality(newQuality) {
+        window.hls.levels.forEach(function (level, levelIndex) {
+          if (level.height === newQuality) {
+            window.hls.currentLevel = levelIndex;
+          }
+        });
+      }
+      video.addEventListener('ready', function () {
+        document.querySelector('.loading').classList.add('hidden');
+      });
+
+      if (!Hls.isSupported()) {
+        new Plyr(video, defaultOptions);
+        video.src = source;
+        document.querySelector('.loading').classList.add('hidden');
+      } else {
+        const hls = new Hls({
+          manifestLoadingTimeOut: 60000,
+          manifestLoadingMaxRetry: 10,
+          levelLoadingMaxRetry: 10,
+          fragLoadingMaxRetry: 10
+        });
+        hls.loadSource(source || quality);
+        hls.on(Hls.Events.ERROR, function (event, data) {
+          if (data.fatal) {
+            document.querySelector('.error').classList.remove('hidden');
+            // debounce(function () {
+            //   hls.destroy();
+            //   load();
+            // }, 1000)();
+          }
+        });
+        hls.on(Hls.Events.FRAG_LOADED, function (event, data) {
+          document.querySelector('.error').classList.add('hidden');
+        });
+        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+          const availableQualities = hls.levels.map(function (l) {
+            return l.height;
+          });
+
+          defaultOptions.quality = {
+            default: availableQualities[0],
+            options: availableQualities,
+            forced: true,
+            onChange: updateQuality,
+          };
+
+          new Plyr(video, defaultOptions);
+        });
+        hls.attachMedia(video);
+        window.hls = hls;
+      }
+    }
+    fetch('https://token.kube.easybroadcast.fr/authtoken?url=http://apphta.easybroadcast.fr/apphta?' + Date.now()).then(function (r) {
+      return r.text();
+    }).then(function (t) {
+      load(quality + t);
+    });
+  </script>
+  
+  
+  
+  <a class='DSD' href='#'target='_blank'> <img src='https://1.bp.blogspot.com/-FgqCgq5-lcI/W-LN-aekfzI/AAAAAAAAExw/F-Pey4ivpMUNn4r5O5TcE1riwJtCsBPywCLcBGAs/s1600/logo.png' style='height: 100%;width: 100%;'/></a>
+
+  
+  
+  
+  
+  
+  </body>
+</html>
