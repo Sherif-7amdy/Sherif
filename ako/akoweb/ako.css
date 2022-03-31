@@ -25,7 +25,7 @@ font-family: 'Baloo Bhaijaan 2';
 .topnav {
 font-family: 'Baloo Bhaijaan 2';
   overflow: hidden;
-  background-color: #1f252e;
+  background-color: #151515;
   position: relative;
 }
 
@@ -45,21 +45,23 @@ font-family: 'Baloo Bhaijaan 2';
 .topnav a.icon {
 font-family: 'Baloo Bhaijaan 2';
     float: left;
-    background-color: #121720;
+      background-color: #5a5a5a;
     padding: 7px;
     margin: 10px;
     border-radius: 6px;
+    color: #ffffff;
+
   
 }
 
 .topnav a:hover {
-  background-color: #1f252e;
+  background-color: #151515;
   color: white;
 }
 
 .active { 
 font-family: 'Baloo Bhaijaan 2';
-  background-color: #1f252e;
+  background-color: #151515;
   color: black;
 }
     </style>
@@ -1952,8 +1954,9 @@ body.search-active .main-header .search-toggle {
 }
 .main-categories-list .item {
     border-radius: 9px;
-    background-color: #181f2aab;
-    box-shadow: 7px 8px 12px rgb(26 31 38);
+       background-color: #7c7c7cab;
+    /* box-shadow: 7px 8px 12px rgb(26 31 38); */
+
   
 }
 .main-categories-list .item .icn {
