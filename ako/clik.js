@@ -1,5 +1,6 @@
-   <script>
-window["tmripple"] =
+ <script type='text/javascript'>
+//<![CDATA[
+    window["tmripple"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -228,4 +229,5 @@ module.exports = {
 /******/ ]);
 
 tmripple.init()
+   //]]>
    </script>
